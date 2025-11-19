@@ -15,6 +15,7 @@ app.use(express.json());
 
 app.post('/api/shorten', async (req, res) => {
     try {
+        console.log("hi");
         const { longurl } = req.body;
         const baseurl = process.env.BASE_URL;
         const checklong = await url.find({ longurl });

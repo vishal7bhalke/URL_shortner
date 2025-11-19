@@ -7,7 +7,7 @@ const AllLinks = () => {
 
   const fetchLinks = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/allLinks");
+      const res = await fetch("https://url-shortner-e6w2.onrender.com/api/allLinks");
       const data = await res.json();
       setLinks(data);
     } catch (err) {
@@ -27,7 +27,7 @@ const AllLinks = () => {
  
   const handleDelete = async (id) => {
   try{
-     const res=await fetch(`http://localhost:5000/api/delete/${id}`,{
+     const res=await fetch(`https://url-shortner-e6w2.onrender.com/api/delete/${id}`,{
     method:"DELETE",
    })
    const data=await res.json();

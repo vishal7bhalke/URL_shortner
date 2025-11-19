@@ -9,10 +9,10 @@ const Continder = () => {
     const handlesubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch(`http://localhost:5000/api/shorten`, {
+            const res = await fetch(`https://url-shortner-e6w2.onrender.com/api/shorten`, {
                 method: "POST",
                 headers: {
-                    "content-type": "application/json"
+                    "Content-type": "application/json"
                 },
                 body: JSON.stringify({ longurl: url }),
 
